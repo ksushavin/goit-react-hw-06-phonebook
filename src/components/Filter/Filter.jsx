@@ -8,18 +8,18 @@ export default function Filter({ onChange, value }) {
   
   return (
     <div className={css.filter}>
-      <label
-        className={css.label}
-        htmlFor={filterId}
-        >Find contacts by name
-      </label>
-      <input
-        id={filterId}
-        type="text"
-        name="filter"
-        value={value}
-        onChange={onChange}
-      />
+        <label
+            className={css.label}
+            htmlFor={filterId}
+            >Find contacts by name
+        </label>
+        <input
+            id={filterId}
+            type="text"
+            name="filter"
+            value={value}
+            onChange={onChange}
+        />
     </div>
   )
 }
