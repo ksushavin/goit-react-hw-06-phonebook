@@ -15,9 +15,7 @@ export default function Phonebook() {
     ]
 
     const [filter, setFilter] = useState('');
-    const [contacts, setContacts] = useState(() => {
-        return JSON.parse(window.localStorage.getItem("contacts")) ?? initial;    
-    });
+    const [contacts, setContacts] = useState(JSON.parse(window.localStorage.getItem("contacts")) ?? initial);
 
     useEffect(() => {
         if (!contacts) {
